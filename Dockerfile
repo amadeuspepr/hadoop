@@ -35,6 +35,6 @@ COPY start-yarn.sh start-yarn.sh
 RUN chown root:root /root/start-yarn.sh
 RUN chmod 700 /root/start-yarn.sh
 
-EXPOSE 8025 8030 8031 8032 8033 8040 8042 8050 8088 50070 50075 50090
+EXPOSE 8088 50070 50075 50090
 
 CMD ["/root/start-yarn.sh", "-d"]
